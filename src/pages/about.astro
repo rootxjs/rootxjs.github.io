@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'About';
+const description = 'About your blog.';
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout title={title} description={description} permalink={permalink} current="about">
+  <div class="container">
+    <h1>About</h1>
+    <figure class="about-image">
+      <img src="../assets/hacker1.webp" alt="Illustration of a notebook" width="330">
+      <figcaption>
+        Illustration by Gemini
+      </figcaption>
+    </figure>
+    <p>Hi there! 👋</p>
+
+    <p>I'm <strong>Jeya Seelan</strong>, a <strong>Security Engineer & Researcher</strong> with 4+ years of experience in <strong>Penetration testing, Red teaming, Security Research and Security automation</strong>.</p>
+
+    <p>🔍 I Specialize in <strong>Web, Network, and Infra security assessments</strong>, along with <strong>bug bounty hunting</strong> and <strong>CTF challenges</strong>.</p>
+
+    <p>🚀 Passionate about <strong>breaking and securing systems</strong>, I love uncovering vulnerabilities and strengthening defenses.</p>
+
+    <p>💬 Always open to discussing <strong>offensive security, red teaming, and security engineering</strong>—feel free to connect!</p>
+
+    <p>📬 <strong>Let's chat!</strong> Reach out on <a href="https://www.linkedin.com/in/jeyaseelans/">LinkedIn</a> or <a href="#">GitHub</a>.</p>
+
+    <p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
