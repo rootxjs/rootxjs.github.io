@@ -1,64 +1,103 @@
-# [Astro](https://astro.build) Blog Template
+# Astro Theme Pure
 
-[![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
+English | [简体中文](./README-zh-CN.md)
 
-## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
+A simple, fast and powerful blog & document theme built by Astro.
 
-## 👩‍🚀 Getting Started
+[![GitHub deployments](https://img.shields.io/github/deployments/cworld1/astro-theme-pure/production?style=flat&logo=vercel&label=vercel)](https://astro-pure.js.org/)
+[![NPM Version](https://img.shields.io/npm/v/astro-pure?logo=npm&style=flat)](https://www.npmjs.com/package/astro-pure)
+[![GitHub Release](https://img.shields.io/github/v/release/cworld1/astro-theme-pure?include_prereleases&style=flat&label=template)](https://github.com/cworld1/astro-theme-pure/releases)
+[![GitHub License](https://img.shields.io/github/license/cworld1/astro-theme-pure?style=flat)](https://github.com/cworld1/astro-theme-pure/blob/main/LICENSE)
 
-### Locally
+![image](./.github/assets/header.webp)
+![image](./.github/assets/body.webp)
 
+> [!NOTE]
+> Known issues: 1. Header & customize options is still under development (template exposed still). 2. Theme template v4.0.5^ UnoCSS preset changed to PresetMini. If there's any problem, please report as issue.
+
+## Introduction
+
+Checkout [Demo Site →](https://astro-pure.js.org/)
+
+### :fire: Features
+
+- [x] :rocket: Fast & high performance
+- [x] :star: Simple & clean design
+- [x] :iphone: Responsive design
+- [x] :mag: Full-site search built with [pagefind](https://pagefind.app/)
+- [x] :world_map: Sitemap & RSS feed
+- [x] :spider_web: SEO-friendly
+- [x] :book: TOC (table of contents)
+- [x] :framed_picture: Dynamic open graph generation for posts
+- [x] :framed_picture: Mediumzoom lightbox for images
+
+### :package: Components
+
+Theme includes a lot of components, which can not only be used in the theme, but also in other astro projects.
+
+> For other astro projects, UnoCSS is required. See [Package README](https://github.com/cworld1/astro-theme-pure/blob/main/packages/pure/README.md#use-with-common-astro-project) for more details.
+
+- Basic components: `Aside`, `Tabs`, `Timeline`, `Steps`, `Spoiler`...
+- Advanced components: `GithubCard`, `LinkPreview`, `Quote`, `QRCode`...
+
+### :white_check_mark: Lighthouse score
+
+[![lighthouse-score](./.github/assets/lighthouse-score.png)](https://pagespeed.web.dev/analysis/https-cworld-top/o229zrt5o4?form_factor=mobile&hl=en)
+
+## Documentation
+
+[Docs](https://astro-pure.js.org/docs) | [Showcase](https://github.com/cworld1/astro-theme-pure/issues/10)
+
+## Package
+
+See [astro-theme-pure](https://www.npmjs.com/package/astro-pure) on npm.
+
+## Local development
+
+Environment requirements:
+
+- [Nodejs](https://nodejs.org/): 18.0.0+
+
+Clone the repository:
+
+```shell
+git clone https://github.com/cworld1/astro-theme-pure.git
+cd astro-theme-pure
 ```
-npm init astro -- --template Charca/astro-blog-template
+
+Useful commands:
+
+```shell
+# install dependencies
+bun install
+
+# start the dev server
+bun dev
+
+# build the project
+bun run build
+
+# preview (after the build)
+bun preview
+
+# create a new post
+bun new-post
 ```
 
-### On StackBlitz
+## Contributions
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
+To spend more time coding and less time fiddling with whitespace, this project uses code conventions and styles to encourage consistency. Code with a consistent style is easier (and less error-prone!) to review, maintain, and understand.
 
-## ✨ Features:
+## Thanks
 
-- ✅ Astro 4.0
-- ✅ Dark Mode
-- ✅ Full Markdown support
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
+- [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
+- [Astro Resume](https://github.com/srleom/astro-theme-resume)
+- [Starlight](https://github.com/withastro/starlight)
 
-## 🚀 Project Structure
+Other third party references are on [Docs#Contributions](https://astro-pure.js.org/docs/advanced/thanks). Appreciate for all open source libraries.
 
-Inside of your Astro project, you'll see the following folders and files:
+## License
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+This project is licensed under the Apache 2.0 License.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3030`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro's documentation](https://github.com/withastro/astro) or jump into Astro's [Discord server](https://astro.build/chat).
+[![Star History Chart](https://api.star-history.com/svg?repos=cworld1/astro-theme-pure&type=Date)](https://star-history.com/#cworld1/astro-theme-pure&Date)
