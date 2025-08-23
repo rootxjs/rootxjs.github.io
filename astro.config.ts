@@ -25,6 +25,7 @@ import config from './src/site.config.ts'
 // https://astro.build/config
 export default defineConfig({
   // Top-Level Options
+
   site: 'https://rootxjs.github.io',
   // base: '/docs',
   trailingSlash: 'never',
