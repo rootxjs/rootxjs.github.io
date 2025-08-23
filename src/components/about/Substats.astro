@@ -10,6 +10,7 @@ interface SubstatsItem {
   text: string
   api?: string
   count?: number
+  showText?: string // Custom text to show when no count is available
 }
 
 type Props = {
@@ -38,7 +39,7 @@ await Promise.all(stats.map(fetchCount))
 
 <div class='grid grid-cols-1 gap-3 rounded-xl border p-2 sm:grid-cols-2 sm:p-3'>
   {
-    stats.map(({ link, platform, icon, color, count, text }) => (
+    stats.map(({ link, platform, icon, color, count, text, showText }) => (
       <a
         class='group text-muted-foreground no-underline'
         href={link}
@@ -55,9 +56,9 @@ await Promise.all(stats.map(fetchCount))
               <samp>{count}</samp>
               <span class='text-sm font-normal'>{text}</span>
             </div>
-          ) : (
-            'null'
-          )}
+          ) : showText ? (
+            <span class='text-sm font-normal text-muted-foreground'>{showText}</span>
+          ) : null}
         </div>
       </a>
     ))
