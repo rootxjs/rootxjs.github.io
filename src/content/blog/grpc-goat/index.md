@@ -5,6 +5,9 @@ publishDate: 2025-09-17
 tags: ["grpc-goat", "vulnerable-lab", "tutorial", "security-lab"]
 draft: false
 comment: true
+heroImage:
+  src: './grpc_goat_comp.webp'
+  inferSize: true
 ---
 
 # Launching gRPC Goat
