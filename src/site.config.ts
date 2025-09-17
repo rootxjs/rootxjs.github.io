@@ -3,7 +3,7 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'RootXjs blog',
+  title: 'RootXJS blog',
   /** Will be used in index page & copyright declaration */
   author: 'Jeya Seelan S',
   /** Description metadata for your website. Can be used in page metadata. */
@@ -48,7 +48,7 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      // { title: 'Docs', link: '/docs' },
+      { title: 'gRPC Goat Docs', link: '/docs/grpc_goat_docs/getting-started' },
       // { title: 'Projects', link: '/projects' },
       // { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
@@ -163,11 +163,43 @@ export const integ: IntegrationUserConfig = {
       // search: false,
       pageview: true,
       comment: true,
+      lang: 'en',
       locale: {
         reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
-      },
-      imageUploader: false
+        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)',
+        sofa: 'No comments yet.',
+        submit: 'Submit',
+        reply: 'Reply',
+        cancelReply: 'Cancel reply',
+        comment: 'Comments',
+        refresh: 'Refresh',
+        more: 'Load more...',
+        preview: 'Preview',
+        emoji: 'Emoji',
+        uploadImage: 'Upload image',
+        seconds: 'seconds ago',
+        minutes: 'minutes ago',
+        hours: 'hours ago',
+        days: 'days ago',
+        now: 'just now',
+        uploading: 'Uploading',
+        login: 'Login',
+        logout: 'Logout',
+        admin: 'Admin',
+        sticky: 'Sticky',
+        word: 'Words',
+        wordHint: 'Please input comments between $0 and $1 words!\n Current word number: $2',
+        anonymous: 'Anonymous',
+        level0: 'Dwarves',
+        level1: 'Hobbits',
+        level2: 'Ents',
+        level3: 'Wizards',
+        level4: 'Elves',
+        level5: 'Maiar',
+        gif: 'GIF',
+        gifSearchPlaceholder: 'Search GIF'
+      }
+      // imageUploader: undefined // Remove this line to disable image uploading
     }
   }
 }

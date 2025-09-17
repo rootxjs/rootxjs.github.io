@@ -78,3 +78,7 @@ ignore.*
 bunfig.toml
 /src/content/blog/test.*
 /test/
+src/content/blog/red*
+src/content/blog/swagger*
+src/content/docs/advanced
+src/content/docs/integrations
