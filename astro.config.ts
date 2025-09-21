@@ -29,7 +29,7 @@ export default defineConfig({
 
   site: 'https://rootxjs.github.io',
   // base: '/docs',
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
 
   // Adapter
   // https://docs.astro.build/en/guides/deploy/
